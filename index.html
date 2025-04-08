@@ -24,20 +24,20 @@
     }
     h1 {
       text-align: center;
-      margin-bottom: 20px;
     }
     .header {
       background: #e5e9ec;
       position: sticky;
       z-index: 999999;
       top:0;
+      overflow: hidden;
+      border-radius: 50px;
     }
     /* Navigation */
     nav {
       background: #f0f8ff;
       padding: 10px 20px;
       border-radius: 8px;
-      margin-bottom: 20px;
       text-align: center;
       border-radius: 50px;
     }
@@ -65,7 +65,14 @@
     @media (max-width: 600px) {
       nav a {
         display: block;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
+        max-height: 60px
+      }
+      .header h1 {
+        font-size: 16px;
+      }
+      .header a {
+        font-size: 10px;
       }
     }
   </style>
